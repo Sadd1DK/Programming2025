@@ -14,10 +14,8 @@ int main() {
         return 1;
     }
 
-    // Вычисление обратного числа
     double reciprocal = 1.0 / X;
 
-    // Вычисление степеней
     int square = pow(X, 2);
     int fifth_power = pow(X, 5);
 
@@ -26,4 +24,5 @@ int main() {
     cout << "x^5: " << fifth_power << endl;
 
     return 0;
+
 }

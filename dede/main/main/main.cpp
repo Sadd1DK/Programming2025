@@ -4,9 +4,10 @@
 using namespace std;
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     int X;
 
-    cout << "Enter the number x (not 0): ";
+    cout << "Введите число X (не ноль): ";
     cin >> X;
 
     if (X == 0) {
@@ -14,15 +15,16 @@ int main() {
         return 1;
     }
 
+    // Вычисление обратного числа
     double reciprocal = 1.0 / X;
 
+    // Вычисление степеней
     int square = pow(X, 2);
     int fifth_power = pow(X, 5);
 
-    cout << "Reverse number: " << reciprocal << endl;
-    cout << "x^2: " << square << endl;
-    cout << "x^5: " << fifth_power << endl;
+    cout << "Обратное число: " << reciprocal << endl;
+    cout << "X во второй степени: " << square << endl;
+    cout << "X в пятой степени: " << fifth_power << endl;
 
     return 0;
-
 }

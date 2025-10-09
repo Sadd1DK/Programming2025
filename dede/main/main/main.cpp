@@ -16,15 +16,15 @@ int main() {
     }
 
     // Вычисление обратного числа
-    double reciprocal = 1.0 / X;
+    double obratnoe = 1.0 / X;
 
     // Вычисление степеней
-    int square = pow(X, 2);
-    int fifth_power = pow(X, 5);
+    int stepenDva = pow(X, 2);
+    int stepenPyat = pow(X, 5);
 
-    cout << "Обратное число: " << reciprocal << endl;
-    cout << "X во второй степени: " << square << endl;
-    cout << "X в пятой степени: " << fifth_power << endl;
+    cout << "Обратное число: " << obratnoe << endl;
+    cout << "X во второй степени: " << stepenDva << endl;
+    cout << "X в пятой степени: " << stepenPyat << endl;
 
     return 0;
 }

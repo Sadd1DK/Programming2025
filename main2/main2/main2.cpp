@@ -27,14 +27,14 @@ int main() {
     cout << endl;
 
     // Получаем значение i-го бита в отдельную переменную
-    int bitValue = (A >> i) & 1;
+ int KolichestvoBitov = (A >> i) & 1;
 
-    // Тернарный оператор для получения значения флага
-    string bitStatus = (bitValue == 1) ? "установлен" : "не установлен";
-    cout << "Бит " << i << " " << bitStatus << " (" << bitValue << ")" << endl;
+ // Тернарный оператор для получения значения флага
+ string  normILIstrem = (KolichestvoBitov == 1) ? "установлен" : "не установлен";
+ cout << "Бит " << i << " " << normILIstrem << " (" << KolichestvoBitov << ")" << endl;
 
-    // Проверка условия
-    if (bitValue != 0) {
+ // Проверка условия
+ if (KolichestvoBitov != 0) {
         // Изменяем i-й бит на противоположный
         A = A ^ (1 << i);
         cout << "Результат после изменения бита: " << A << " = ";
@@ -106,4 +106,5 @@ int main() {
     }
 
     return 0;
+
 }
